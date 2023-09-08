@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+:root{
+    --fuente-parrafos:'Bree Serif', serif;
+    --negro:#000000;
+    --rojo:#f0371a;
+    --beige:#f7e6a6;
+    --beigeSegunda:#b5b479;
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuente-parrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color:var(--negro);
+    font-size: 1.6rem;
+    color: var(--beige);
+}
+
+p{
+    text-transform: uppercase;
+}
+
+/**Reloj**/
+.container-clock{
+    width: 90%;
+    max-width: 100rem;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.widget{
+    background-color: var(--beige);
+   
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+   
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.logo img{
+    width: 100%;
+    max-width: 6rem;
+}
+.parrafo-back{
+    color:#3e6b48;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.clock,.date{
+    background-color: #3e6b48;
+    padding: 1rem;
+}
+
+
+
+.date,.secondBox,.clock{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 2rem;
+    justify-content: center;
+    font-weight: 800;
+    flex-wrap: wrap;
+}
+@media screen and (min-width:470px) {
+    .date,.secondBox,.clock{
+        font-size: 3rem;
+    }
+}
+.window{
+    background-color: #000000;
+    padding: 1rem ;
+    border-radius: 100vmax;
+}
+
