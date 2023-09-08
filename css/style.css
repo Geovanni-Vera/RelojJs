@@ -58,7 +58,7 @@ p{
 
 .widget{
     background-color: var(--beige);
-   
+    box-shadow: 0 0 2rem var(--beige);
     display: flex;
     flex-direction: column;
     gap: 2rem;
