@@ -27,6 +27,9 @@
 
         //asignamos los datos del reloj que obtuvimos
         parrafoDiasSemana.textContent = semana[diaSemana];
+        if(dia < 10){
+            dia = "0"+dia;
+        }
         parrafoDia.textContent = dia;
         parrafoMes.textContent = meses[mes];
         parrafoAno.textContent = year;
